@@ -36,11 +36,9 @@ class CarWashTest < Minitest::Test
 
   def test_you_can_see_the_number_of_employees
     c = CarWash.new("Boston, MA", "2005")
-
   end
 
-
-
-
-
+  # You won't need 2 examples in every test, one should suffice
+  # In the test_it_has_a_city test, you're actually testing two different things, that it can extract a city with a simple name and with a complex name -- split that into 2 tests.
+  # If you do have a need for two instances of something, use these variable names, c_1 and c2, instead of c and c1.
 end
